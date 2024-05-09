@@ -5,6 +5,8 @@
 #nav{
     width: 240px;
     height: 500px;
+    background: #c3faffab;
+    padding: 5px;
 }
 #headportrait{
     width: 200px;
