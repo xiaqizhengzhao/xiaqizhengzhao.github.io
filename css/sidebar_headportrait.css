@@ -3,19 +3,32 @@
     margin: 0;
 }
 #nav{
-    width: 240px;
-    height: 500px;
+    width: 25vh;
+    height: 100vh;
     background: #c3faffab;
-    padding: 5px;
+    padding: 10px;
+    float: left;
 }
 #headportrait{
     width: 200px;
     height: 150px;
-    margin-left: 20px;
+    overflow: hidden;
 }
 
 #portrait{
-    width: 180px;
+    width: 200px;
     height: 150px;
-    margin: 0px 0px 0px 10px;
+    opacity: 1; 
+    transform: translateX(0); /* 图片滑动至容器内 */
+    transition: all 0.3s;
+}
+
+#headportrait:hover .portarait_shade{
+    transition: opacity 0.5s ease-out; /* 平滑过渡 */
+    transform: translateX(-100%); /* 图片初始位于容器左侧，完全不可见 */
+    transition: all 0.3s;
+}
+
+.bi{
+    margin-left: 10px;
 }
